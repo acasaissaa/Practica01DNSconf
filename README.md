@@ -3,6 +3,7 @@
 ## Configurar la zona y comprobar que funciona.
 
 Primero ubicamos el volumen asociado al directorio /etc/bind/, hacemos click derecho y le damos a Explore in a Development Container. El primer archivo que modificaremos será **named.conf.options**, donde descomentaremos estas líneas:
+
 ~~~
 forwarders {
     8.8.8.8;
