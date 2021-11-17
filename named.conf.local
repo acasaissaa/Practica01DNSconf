@@ -1,6 +1,21 @@
-//
-// Do any local configuration here
-//
+;
+; BIND data file for example.com
+;
+$TTL	604800
+@	IN	SOA	example.com. root.example.com. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns.example.com.
+@	IN	A	172.27.0.2
+@	IN	AAAA	::1
+ns  IN  A   172.27.0.2
+aaa	IN	A	10.80.89.81
+ejemplo1	IN 	A 	10.80.89.80
+
 
 // Consider adding the 1918 zones here, if they are not used in your
 // organization
